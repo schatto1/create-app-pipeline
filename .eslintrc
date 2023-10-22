@@ -2,7 +2,11 @@
   "extends": "airbnb",
   "parser": "babel-eslint",
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true,
+    "jest/globals": true,
+    "node": true,
+    "cypress/globals": true
   },
   "rules": {
     "semi": [
