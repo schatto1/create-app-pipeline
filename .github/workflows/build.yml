@@ -31,7 +31,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          # command: npm run test:e2e it currently hangs here, will fix later
+          # command: npm run test:e2e this isn't really needed, still runs the tests
           start: npm start
           wait-on: http://localhost:8000
       # If there was a deployment, it would happen here
@@ -45,6 +45,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
+      #  Make sure the workflow has read + write permissions, otherwise this step fails!
       - name: Bump version and push tag
         if: ${{ github.event_name == 'push' && !contains(github.event.head_commit.message, '#skip') }}
         uses: anothrNick/github-tag-action@1.67.0
