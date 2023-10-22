@@ -8,6 +8,9 @@
     "node": true,
     "cypress/globals": true
   },
+  "plugins": [
+    "react", "jest", "cypress"
+  ],
   "rules": {
     "semi": [
       "error",
