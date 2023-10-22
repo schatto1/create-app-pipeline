@@ -5,6 +5,8 @@ Simple boilerplate
 
 Note: this repo was created from https://github.com/schatto1/create-app, which is a fork of https://github.com/fullstack-hy2020/create-app, for the [last two exercises pf part 11 of Fullstack Open](https://fullstackopen.com/en/part11/expanding_further)
 
+MAKE SURE TO USE NODE 16. THis repo will not work with 19.
+
 This boilerplate contains `React`, `express`, the required dependencies and a small amount of useful ones.
 
 The folder structure is as follows:
